@@ -1,0 +1,19 @@
+Package: endecrypt
+Type: Package
+Title: Encrypt and decrypt dataframes, Columns, cells and vectors
+Version: 0.1.0
+Author: Revanth Nemani <raynemani@gmail.com>, Aditya Vikram <adyviky9@gmail.com>
+Author@R: c(
+  person("Revanth", "Nemani", "raynemani@gmail.com", role = c("aut", "cre")),
+  person("Aditya", "Vikram", "adyviky9@gmail.com", role = c("aut", "cre")))
+Maintainer: Revanth Nemani <raynemani@gmail.com>
+Description: Generate, save and load RSA key pair.
+  Encrypt and decrypt dataframes, Columns, cells and vectors using the key pair.
+Depends: R (>= 3.6.0)    
+License: GPL-3 | file LICENSE
+RoxygenNote: 6.1.1
+Imports: PKI , 
+  parallel ,
+  purrr 
+Encoding: UTF-8
+LazyData: true
