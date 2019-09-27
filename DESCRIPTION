@@ -17,3 +17,4 @@ Imports: PKI ,
   purrr 
 Encoding: UTF-8
 LazyData: true
+ByteCompile: true
