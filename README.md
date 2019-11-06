@@ -1,3 +1,10 @@
+</br>
+
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.com/RevanthNemani/endecrypt.svg?branch=master)](https://travis-ci.com/RevanthNemani/endecrypt)
+<!-- badges: end -->
+
+
 # endecrypt
 
 #### Version: 0.1.0
