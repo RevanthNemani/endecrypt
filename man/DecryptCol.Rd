@@ -7,11 +7,15 @@
 DecryptCol(x, prv.key, encryption.type = "aes256")
 }
 \arguments{
-\item{x}{List or Column. The column to decrypt}
+\item{x}{List or Column.
+The column to decrypt}
 
-\item{prv.key}{Key Object. The private key object. Use the LoadKey function to load the private key and assign it}
+\item{prv.key}{Key Object.
+The private key object.
+Use the LoadKey function to load the private key and assign it}
 
-\item{encryption.type}{Refer PKI.encrypt function. The default is "aes256"}
+\item{encryption.type}{Refer PKI.encrypt function.
+The default is "aes256"}
 }
 \value{
 Decrypted list or column
@@ -21,7 +25,11 @@ Column decryption
 }
 \examples{
 \dontrun{
-DecryptCol(x = airquality$Ozone, prv.key = prvkey, encryption.type = "aes256")
+DecryptCol(
+  x = airquality$Ozone,
+  prv.key = prvkey,
+  encryption.type = "aes256"
+)
 }
 
 }

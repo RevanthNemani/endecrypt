@@ -9,7 +9,9 @@ Decrypt(x, prv.key, encryption.type = "aes256")
 \arguments{
 \item{x}{The variable to be decrypted}
 
-\item{prv.key}{key object. The private key object. Use the LoadKey funtion to load the private key and assign it}
+\item{prv.key}{key object.
+The private key object.
+Use the LoadKey funtion to load the private key and assign it}
 
 \item{encryption.type}{Refer PKI.encrypt function. The default is "aes256"}
 }

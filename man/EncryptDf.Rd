@@ -9,7 +9,9 @@ EncryptDf(x, pub.key, encryption.type = "aes256")
 \arguments{
 \item{x}{data.frame. The dataset to encrypt}
 
-\item{pub.key}{Key Object. The public key object. Use the LoadKey function to load the public key and assign it}
+\item{pub.key}{Key Object.
+The public key object.
+Use the LoadKey function to load the public key and assign it}
 
 \item{encryption.type}{Refer PKI.encrypt function. The default is "aes256"}
 }

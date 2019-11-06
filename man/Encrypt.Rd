@@ -9,7 +9,9 @@ Encrypt(x, pub.key, encryption.type = "aes256")
 \arguments{
 \item{x}{The variable to be encrypted}
 
-\item{pub.key}{key object. The public key object. Use the LoadKey funtion to load the public key and assign it}
+\item{pub.key}{key object.
+The public key object.
+Use the LoadKey funtion to load the public key and assign it}
 
 \item{encryption.type}{Refer PKI.encrypt function. The default is "aes256"}
 }

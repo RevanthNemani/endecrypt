@@ -9,7 +9,8 @@ EncryptCol(x, pub.key, encryption.type = "aes256")
 \arguments{
 \item{x}{List or Column. The column to encrypt}
 
-\item{pub.key}{Key Object. The public key object. Use the LoadKey function to load the public key and assign it}
+\item{pub.key}{Key Object. The public key object.
+Use the LoadKey function to load the public key and assign it}
 
 \item{encryption.type}{Refer PKI.encrypt function. The default is "aes256"}
 }
@@ -21,7 +22,11 @@ Column encryption
 }
 \examples{
 \dontrun{
-EncryptCol(x = airquality$Ozone, pub.key = pubkey, encryption.type = "aes256")
+EncryptCol(
+  x = airquality$Ozone,
+  pub.key = pubkey,
+  encryption.type = "aes256"
+)
 }
 
 }

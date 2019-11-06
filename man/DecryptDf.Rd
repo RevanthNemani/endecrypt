@@ -9,7 +9,9 @@ DecryptDf(x, prv.key, encryption.type = "aes256")
 \arguments{
 \item{x}{encrypted data.frame. The dataset to decrypt}
 
-\item{prv.key}{Key Object. The private key object. Use the LoadKey function to load the private key and assign it}
+\item{prv.key}{Key Object.
+The private key object.
+Use the LoadKey function to load the private key and assign it}
 
 \item{encryption.type}{Refer PKI.encrypt function. The default is "aes256"}
 }

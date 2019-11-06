@@ -9,9 +9,11 @@ SaveGenKey(bits = 2048, private.key.path, public.key.path)
 \arguments{
 \item{bits}{Number. Usually 2048}
 
-\item{private.key.path}{path to save the private key. It should have a file extension ".pem" or ".der"}
+\item{private.key.path}{path to save the private key.
+It should have a file extension ".pem" or ".der"}
 
-\item{public.key.path}{path to save the public key. It should have a file extension ".pem" or ".der"}
+\item{public.key.path}{path to save the public key.
+It should have a file extension ".pem" or ".der"}
 }
 \value{
 Saves public and private keys in specified paths
@@ -21,9 +23,11 @@ Saves generated keys
 }
 \examples{
 \dontrun{
-SaveGenKey(bits = 2048,
-            private.key.path = "Encription/private.pem",
-            public.key.path = "Encription/public.pem")
+SaveGenKey(
+  bits = 2048,
+  private.key.path = "Encription/private.pem",
+  public.key.path = "Encription/public.pem"
+)
 }
 
 }

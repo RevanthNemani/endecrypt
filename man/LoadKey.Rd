@@ -7,9 +7,12 @@
 LoadKey(key.path, Private)
 }
 \arguments{
-\item{key.path}{Specify the path of the key in "". The file extensions should end in ".pem" or ".der"}
+\item{key.path}{Specify the path of the key in "".
+The file extensions should end in ".pem" or ".der"}
 
-\item{Private}{Boolean. If the key is a private key use TRUE. If the key is public key use FALSE.}
+\item{Private}{Boolean.
+If the key is a private key use TRUE.
+If the key is public key use FALSE.}
 }
 \value{
 Loads public and private keys from specific paths
@@ -19,8 +22,8 @@ loads the generated keys
 }
 \examples{
 \dontrun{
-  LoadKey("Encription/private.pem", Private)
-  }
+LoadKey("Encription/private.pem", Private)
+}
 
 }
 \author{
