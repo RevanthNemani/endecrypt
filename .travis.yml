@@ -2,20 +2,26 @@
 
 language: R
 cache: packages
+pandoc_version: 2.7.3
+before_install:
+  - tlmgr install index
+
 warnings_are_errors: true
 
 os:
   - linux
-  - osx
 
 r:
-  - oldrel
   - release
-  - devel
+  - devTel
 
 r_packages:
   - RTest
   - testthat
 
+install:
+  - R -e 'devtools::install_deps(dep = T)'
+
 apt_packages:
   - libxml2-dev
+  - libmagick++-dev
