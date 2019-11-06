@@ -19,9 +19,6 @@ r_packages:
   - RTest
   - testthat
 
-install:
-  - R -e 'devtools::install_deps(dep = T)'
-
 apt_packages:
   - libxml2-dev
   - libmagick++-dev
