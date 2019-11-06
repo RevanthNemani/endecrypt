@@ -8,8 +8,12 @@ before_install:
 
 warnings_are_errors: true
 
-os:
-  - linux
+jobs:
+  include:
+    - os: linux
+      dist: bionic
+    - os: linux
+      dist: xenial
 
 r:
   - release
