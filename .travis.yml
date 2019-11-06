@@ -23,10 +23,13 @@ r_packages:
   - RTest
   - testthat
 
+r_github_packages:
+  - jimhester/lintr
+
 apt_packages:
   - libxml2-dev
   - libmagick++-dev
 
 after_success:
-  - Rscript -e 'covr::codecov(type = "all")'
+  - Rscript -e 'covr::codecov(type = "all")' -e 'lintr::lint_package()'
 

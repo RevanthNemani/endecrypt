@@ -1,7 +1,9 @@
 #' Encrypt variable
 #'
 #' @param x The variable to be encrypted
-#' @param pub.key key object. The public key object. Use the LoadKey funtion to load the public key and assign it
+#' @param pub.key key object.
+#' The public key object.
+#' Use the LoadKey funtion to load the public key and assign it
 #' @param encryption.type Refer PKI.encrypt function. The default is "aes256"
 #'
 #' @author "Revanth Nemani <raynemani@gmail.com>"
@@ -20,10 +22,11 @@
 Encrypt <- function(x, pub.key, encryption.type = "aes256") {
   # function assumes you already created a RSA key
   # encrypts a vector
-  #pki
+  # pki
   # Args:
   #  x: The vector(variable) to be encrypted.
-  #  pub.key: The public key object. Use the LoadKey() to load the public key and assign it.
+  #  pub.key: The public key object.
+  #           Use the LoadKey() to load the public key and assign it.
   #  encryption.type: Refer PKI.encrypt(). The default is "aes256".
   x <- charToRaw(as.character(x))
   e <- PKI::PKI.encrypt(x, pub.key, encryption.type)
@@ -33,7 +36,9 @@ Encrypt <- function(x, pub.key, encryption.type = "aes256") {
 #' Decrypt variable
 #'
 #' @param x The variable to be decrypted
-#' @param prv.key key object. The private key object. Use the LoadKey funtion to load the private key and assign it
+#' @param prv.key key object.
+#' The private key object.
+#' Use the LoadKey funtion to load the private key and assign it
 #' @param encryption.type Refer PKI.encrypt function. The default is "aes256"
 #'
 #' @author "Revanth Nemani <raynemani@gmail.com>"
@@ -55,7 +60,8 @@ Decrypt <- function(x, prv.key, encryption.type = "aes256") {
   #
   # Args:
   #  x: The encrypted vector(variable) to be decrypted.
-  #  prv.key: The private key object. Use the LoadKey() to load the private key and assign it.
+  #  prv.key: The private key object.
+  #           Use the LoadKey() to load the private key and assign it.
   #  encryption.type: Refer PKI.encrypt(). The default is "aes256".
   e <- PKI::PKI.decrypt(x, prv.key, encryption.type)
   x <- rawToChar(e)
