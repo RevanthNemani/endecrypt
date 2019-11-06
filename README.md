@@ -2,6 +2,8 @@
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.com/RevanthNemani/endecrypt.svg?branch=master)](https://travis-ci.com/RevanthNemani/endecrypt)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/RevanthNemani/endecrypt?branch=master&svg=true)](https://ci.appveyor.com/project/RevanthNemani/endecrypt)
+[![Codecov test coverage](https://codecov.io/gh/RevanthNemani/endecrypt/branch/master/graph/badge.svg)](https://codecov.io/gh/RevanthNemani/endecrypt?branch=master)
 <!-- badges: end -->
 
 
